@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.id{
+    width: 1200px;
+    height: 150vh;
+    justify-content: center;
+    margin: 20px;
+    background-color: black;
+
+  
+    
+    
+}
+.item{
+    width:200px ;
+    height: 30vh;
+    border: solid;
+    margin: 10px;
+    background-color: aquamarine;
+    display: inline-block;
+
+}
+#item1{
+    /* position: absolute;
+    right: 20px; */
+    position: fixed;
+    right: 25px;
+    /* position: relative;
+    left: 25px; */
+    /* position: static;
+    right: 15px; */
+
+}
+#item2{
+    /* position: sticky;
+    bottom: 10px; */
+
+}
