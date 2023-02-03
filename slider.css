@@ -1,0 +1,30 @@
+.box {
+    width: 900px;
+    height: 500px;
+    margin: 60px auto;
+    box-shadow: 0px 0px 20px black;
+    position: relative;
+    overflow: hidden;  
+}
+
+img {
+    width: 100%;
+    position: absolute;
+    /* transition: 1s; */
+    /* background-color: rgba(0, 0, 0, 0.577); */
+
+}
+
+.right i {
+    position: absolute;
+    font-size: 65px;
+    top: 280px;
+    left: 100px;
+}
+
+.left i {
+    position: absolute;
+    font-size: 65px;
+    top: 280px;
+    right: 100px;
+}
