@@ -1,0 +1,51 @@
+body {
+    background-image: url(./pexels-min-an-1087735.jpg);
+    background-size: cover;
+    background-position: c;
+}
+
+.container {
+    background-color: rgba(255, 202, 104, 0.677);
+    width: 600px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+/* #passworderror {
+
+    background-color: #003BDE;
+    position: relative;
+    padding: 20px;
+    color: white;
+    width: 200px;
+    margin: 0 auto;
+} */
+
+/* #passworderror::after {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    top: -22px;
+    left: 90%;
+    background-color: #003BDE;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    transform: rotatey(0.5turn);
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+} */
+
+input {
+    display: block;
+    padding: 10px;
+    margin: 20px auto;
+    width: 250px;
+}
+
+input[type=submit] {
+    width: 275px;
+}
+
+p {
+    color: crimson;
+}

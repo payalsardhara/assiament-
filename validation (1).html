@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./validation.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>login form</h1>
+        <form action="" onsubmit="return validform()" method="get">
+            <input type="text" name="" id="username" placeholder="user name">
+            <p id="usererror"></p>
+            <input type="password" name="" id="password" placeholder="password">
+            <p id="passworderror"></p>
+            <input type="email" name="" id="email" placeholder="@email.com">
+            <p id="emailerror"></p>
+            <input type="tel" name="" id="tel" placeholder="mo.number">
+            <p id="telerror"></p>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+    <script src="app.js"></script>
+    <!-- <script>
+        let username = document.getElementById('username')
+        let password = document.getElementById('password')
+        let x = 1
+
+        function validform() {
+            if (username.value == '') {
+                document.getElementById('usererror').innerHTML = 'must be riquired'
+                x = 0
+            }
+            else {
+                document.getElementById('usererror').innerHTML = ''
+                x = 1
+            }
+            if (password.value == '') {
+                document.getElementById('passworderror').innerHTML = 'enter your password'
+                x = 0
+
+            }
+            else if (password.value.length < 8) {
+                document.getElementById('passworderror').innerHTML = 'please enter atleast 8 digits'
+                x = 0
+
+            }
+            else {
+                document.getElementById('passworderror').innerHTML = ''
+                x = 1
+            }
+            if (email.value == '') {
+                document.getElementById('emailerror').innerHTML = 'please enter your email'
+                x = 0
+            }
+            else {
+                document.getElementById('emailerror').innerHTML = ''
+                x = 1
+            }
+            if (x) {
+                return true
+            }
+            else {
+                return false
+            }
+        }
+    </script> -->
+</body>
+
+</html>
