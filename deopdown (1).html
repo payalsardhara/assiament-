@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <div class="bg">pink</div>
+        <select class="Selector" on change="changecolor(this)">
+            <option value="#ff2323">red</option>
+            <option value="#9b1fe8">purple</option>
+            <option value="#66ff00">green</option>
+            <option value="#ffff12">yellow</option>
+        </select>
+    </section>
+    <script>
+    function changecolor(getcolor){
+        let bg = document.queryselector('.bg');
+        let selectcolor =getcolor.value;
+        let text = getcolor.options[getcolor.selectedindex].text;
+        bg.style.background = selectors;
+        bg.innerhtml =text
+    }
+</script>
+</body>
+</html>
