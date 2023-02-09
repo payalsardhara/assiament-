@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <style>
+        div{
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+            background: rgb(226, 104, 43);
+            margin: 10px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <script>
+        $("div").one("click", function() {
+            // console.log($(this).height(50));
+
+            $(this).width(50).css({
+                cursor: "auto",
+                background: "red"
+            });
+        })
+        $("div").one("click", function() {
+            // console.log($(this).height(50));
+
+            $(this).height(50).css({
+                cursor: "auto",
+                background: "red"
+            });
+        })
+
+    </script>
+</body>
+</html>
