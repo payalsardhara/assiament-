@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            background-color: blueviolet;
+            width: 600px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="box">
+           <h1>somthing</h1>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error excepturi dolorum ullam reprehenderit eum. Similique officiis saepe facilis vitae consequatur mollitia esse quos fuga eligendi ex ea, maiores reiciendis omnis.</p>
+    </div>
+
+    <script>
+        $("#box").position()
+        console.log($("#box h1").position());
+    </script>
+
+</body>
+</html>

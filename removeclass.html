@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 600px;
+            border: solid 1px;
+            margin: 0 auto;
+            transition: 1s;
+        }
+        button{
+            display: block;
+            margin: 0 auto;
+        }
+        .bg{
+            background-color: aqua;
+            padding: 15px;
+        }
+        .color{
+            color: brown;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="box">
+        <h1>add class</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ex maxime deleniti eius aspernatur rerum ad nemo ut facere consequuntur.</p>
+    </div>
+    <button id="addclass">add clss</button>
+    <button id="removeclass">removeclass</button>
+    <script>
+        $('#addclass').click(function () {
+           $('#box').addClass('bg colour')
+        })
+
+        $('#removeclass').click(function () {
+           $('#box').removeClass('bg colour')
+        })
+    </script>
+    
+</body>
+</html>
