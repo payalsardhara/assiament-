@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 10px;
+    }
+    body{
+        font-family: sans-serif;
+        background-color: antiquewhite;
+        overflow: hidden;
+    }
+    header{
+        width: 100%;
+        height: 6rem;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10rem;
+    }
+    .humburger{
+        display: none;
+    }
+    .line{
+        width: 40px;
+        height: 7px;
+        background-color: antiquewhite;
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+    .logo{
+        font-size: 2rem;
+        color: antiquewhite;
+    }
+    .navigation{
+        transition: all .6s ease-in-out;
+    }
+    .navigation ul {
+        display: flex;
+    }
+    .navigation ul li{
+        list-style: none;
+        margin-right: 3rem;
+    }
+    .navigation ul li a{
+        display: inline-block;
+        text-decoration: none;
+        color: antiquewhite;
+        font-size: 2rem;
+        line-height: 3rem;
+        transition: all .3s ease;
+    }
+    .navigation ul li a:hover{
+        background-color: lightgreen;
+    }
+    .navigation.active{
+        left: 0;
+    }
+
+    @media only screen and (max-width:900px){
+        header{
+            padding: 0 5rem;
+        }
+        .navigation{
+            position: absolute;
+            top: 6rem;
+            left: 100%;
+            width: 50%;
+            height: 100%;
+            background-color: black;
+        }
+        .navigation ul{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .navigation ul li a{
+            border-bottom: solid ,25px rgba(211,211,211, .6);
+            display: block;
+        }
+        .humburger{
+            display: block;
+            cursor: pointer;
+        }
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+<body>
+    <header>
+        <div class="logo">my logo</div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">protfolio</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </nav>
+        <div class="humburger">
+              <div class="line line1"></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+        </div>
+    </header>
+    <script>
+        document.querySelector('.humburger').addEventListener('click',(e) =>{
+            e.preventDefault();
+          document.querySelector('.navigationbar').classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
